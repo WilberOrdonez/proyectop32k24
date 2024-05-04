@@ -147,3 +147,12 @@ CREATE TABLE asignacioncursosmastros
   FOREIGN KEY (codigo_maestro) REFERENCES maestros(codigo_maestro)
   ) ENGINE = InnoDB DEFAULT CHARSET=latin1;
 
+CREATE TABLE habitacion
+ (
+  id_habitacion VARCHAR(15),
+  id_tipoHabitacion VARCHAR(45),
+  id_tipocama VARCHAR(45),
+  precio VARCHAR(20),
+  estatus_habitacion VARCHAR(1),
+  PRIMARY KEY (id_habitacion)
+) ENGINE = InnoDB DEFAULT CHARSET=latin1;
